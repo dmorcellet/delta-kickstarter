@@ -2,7 +2,8 @@ package delta.kickstarter;
 
 import java.io.File;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import delta.launcher.Launcher;
 import delta.launcher.data.LauncherConfiguration;
@@ -16,7 +17,7 @@ import delta.updates.engine.UpdateController;
  */
 public class Kickstarter
 {
-  private static final Logger LOGGER=Logger.getLogger(Kickstarter.class);
+  private static final Logger LOGGER=LoggerFactory.getLogger(Kickstarter.class);
 
   private static void checkForUpdates()
   {
